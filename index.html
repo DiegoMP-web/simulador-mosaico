@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TODO DE MOSAICO - Simulador de Mosaico Hidráulico</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand__title">TODO DE MOSAICO</div>
+      <div class="brand__subtitle">Simulador de Mosaico Hidráulico</div>
+    </div>
+
+    <div class="header-actions">
+      <button id="reset-btn" class="btn btn-outline">Reiniciar</button>
+    </div>
+  </header>
+
+  <main class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="panel">
+        <h3 class="panel__title">Modelo</h3>
+
+        <input id="model-search" class="input" type="text" placeholder="Buscar modelo…" />
+        <div class="category-tabs" id="category-tabs">
+  <button class="tab active" data-cat="ALL">Todos</button>
+  <button class="tab" data-cat="GEOMETRICOS">Geométricos</button>
+  <button class="tab" data-cat="ORGANICOS">Orgánicos</button>
+  <button class="tab" data-cat="CLASICOS">Clásicos</button>
+  <button class="tab" data-cat="MODERNOS">Modernos</button>
+</div>
+
+        <!-- Grid de miniaturas -->
+        <div id="model-grid" class="model-grid"></div>
+
+        <!-- Select oculto por compatibilidad -->
+        <select id="model-select" class="input input-select hidden" aria-hidden="true"></select>
+      </div>
+
+      <div class="panel">
+        <h3 class="panel__title">Vista</h3>
+        <div class="btn-group">
+          <button id="view-1-tile" class="btn btn-outline">1 pieza</button>
+          <button id="view-4-tiles" class="btn btn-primary">4 piezas</button>
+          <button id="view-24-tiles" class="btn btn-outline">24 piezas</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3 class="panel__title">Colores</h3>
+        <div id="palette" class="palette"></div>
+        <div class="hint">
+          1) Elige un color<br />
+          2) Clic en una zona del mosaico
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3 class="panel__title">Acciones</h3>
+        <button id="export-btn" class="btn btn-primary w-full">Exportar imagen (PNG)</button>
+        <div class="hint subtle">
+          *Exportación toma el SVG visible y lo convierte a PNG.
+        </div>
+      </div>
+    </aside>
+
+    <!-- Preview -->
+    <section class="preview-area">
+      <div class="preview-card">
+        <h2 class="preview-title">Vista del mosaico</h2>
+
+        <div id="preview-wrapper" class="preview-wrapper">
+          <div id="preview-grid" class="preview-grid">
+            <div class="empty-state">Elige un modelo para comenzar.</div>
+          </div>
+        </div>
+
+        <div class="preview-meta">
+          <span id="meta-model">Modelo: —</span>
+          <span id="meta-view">Vista: 4 piezas</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scripts: orden IMPORTANTE -->
+  <script src="js/svg-manager.js"></script>
+  <script src="js/pattern-engine.js"></script>
+  <script src="js/colors.js"></script>
+  <script src="js/export-manager.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
