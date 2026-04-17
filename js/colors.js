@@ -67,7 +67,6 @@ window.CBA_COLORS = [
   { id: "180-06", name: "Blue Steel", hex: "#23697E" },
   { id: "176-05", name: "Capri", hex: "#4562AB" },
   { id: "297-03", name: "Cobalt Gray", hex: "#8DB0B8" },
-  { id: "176-07", name: "Dark Navy", hex: "#2C364E" },
   { id: "R4-12", name: "Dark Cobalt", hex: "#253A40" },
   { id: "180-02", name: "Gray Blue", hex: "#ACD1DC" },
   { id: "176-01", name: "Light Blue", hex: "#DCF0F8" },
