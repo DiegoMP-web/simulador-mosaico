@@ -96,6 +96,7 @@ window.MOSAIC_MODELS = [
   { id: "niza", name: "Niza", filename: "niza.svg", category: "CLASICOS", rotate: true },
   { id: "olesia", name: "Olesia", filename: "olesia.svg", category: "CLASICOS", rotate: true },
   { id: "olimpia", name: "Olimpia", filename: "olimpia.svg", category: "CLASICOS", rotate: false },
+  { id: "otomi", name: "Otomi", filename: "otomi.svg", category: "ORGANICOS", rotate: true },
   { id: "palmanova", name: "Palmanova", filename: "palmanova.svg", category: "CLASICOS", rotate: false },
   { id: "passagi", name: "Passagi", filename: "passagi.svg", category: "GEOMETRICOS", rotate: false },
   { id: "parma", name: "Parma", filename: "parma.svg", category: "ORGANICOS", rotate: false },
